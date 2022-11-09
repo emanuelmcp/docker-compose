@@ -1,3 +1,4 @@
+#Para conectar, poner en el localhost db
 version: '3.8'
 services:  
   db:
