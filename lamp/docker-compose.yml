@@ -24,7 +24,6 @@ services:
      - mariadb:/var/lib/mysql
     networks:
       db:
-              
   phpmyadmin:
     image: phpmyadmin
     restart: always
@@ -34,6 +33,6 @@ services:
       - "40001:80"
     environment:
       - PMA_HOST=mariadb
-      - PMA_PORT=3306 
+      - PMA_PORT=3306
     networks:
       db:
