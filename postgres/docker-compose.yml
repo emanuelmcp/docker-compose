@@ -24,6 +24,13 @@ services:
       - "5050:80"
     networks:
       - postgres
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+    - "8080:8080"
+    networks:
+      - postgres
 networks:
   postgres:
     driver: bridge
