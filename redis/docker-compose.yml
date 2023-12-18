@@ -8,14 +8,6 @@ services:
       - 6379:6379
     networks:
       - redis-network
-
-  redis-insight:
-    image: redislabs/redisinsight:latest
-    restart: always
-    ports:
-      - 8001:8001
-    networks:
-      - redis-network
 networks:
   redis-network:
     driver: bridge
